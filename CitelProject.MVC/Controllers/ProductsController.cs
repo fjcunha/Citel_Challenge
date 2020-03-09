@@ -65,7 +65,7 @@ namespace CitelProject.MVC.Controllers
             string Url = $"{aPIExtensions.URL_BASE}{aPIExtensions.PRODUCTS}/{id}";
             var product = await Url.GetJsonAsync<ProductViewModel>();
             IEnumerable<CategoryViewModel> categories = await $"{aPIExtensions.URL_BASE}{aPIExtensions.CATEGORIES}".GetJsonAsync<IEnumerable<CategoryViewModel>>();
-            ViewBag.CategoryID = new SelectList(categories, "CategoryID", "Name");
+            ViewBag.CategoryID = categories;
             return View(product);
         }
 
