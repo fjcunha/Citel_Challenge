@@ -8,12 +8,12 @@ namespace CitelProject.MVC.Extensions
     public class APIExtension
     {
         public string URL_BASE { get; private set; }
-        public string CATEGORIES = "categories";
-        public string PRODUCTS = "products";
+        public string CATEGORIES = "api/categories";
+        public string PRODUCTS = "api/products";
 
         public APIExtension()
         {
-            URL_BASE = "http://localhost/CitelProjectAPI/api/";
+            URL_BASE = "http://localhost/CitelProjectAPI/";
         }
     }
 }
