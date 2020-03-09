@@ -91,7 +91,7 @@ namespace CitelProject.MVC.Controllers
 
         // POST: Categories/Delete/5
         [HttpPost]
-        public async Task<ActionResult> Delete(int id, FormCollection collection)
+        public async Task<ActionResult> Delete(int id, CategoryViewModel collection)
         {
             try
             {
