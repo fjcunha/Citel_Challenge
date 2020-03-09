@@ -7,10 +7,25 @@ Camada Web Api com documentação Swagger
 # Instruções
 
 -> Clone este projeto
--> Configure a connection string no web.config do projeto CitelProject.API
--> Setar projeto CitelProject.API como StartUp project
 
-Com a connection string configurada corretamente, e projeto API como StartUp Project, abra o Package Manager Console e digite o comando:
+-> Abra no Visual Studio e build para que as dependencias sejam restauradas
+
+-> Configure a connection string no web.config do projeto CitelProject.API
+
+Exemplo
+
+`<add name="CitelProjectConnection" providerName="MySql.Data.MySqlClient" connectionString="server=localhost;port=3306;userid=[USER];password=[PASSWORD];database=[DATABASE];persistsecurityinfo=True" />`
+
+-> Setar projeto CitelProject.API como StartUp project
+(Clicar com direito no projeto > Set as StartUp Project)
+
+Com a connection string configurada corretamente, e projeto API como StartUp Project: 
+
+-> abra o Package Manager Console 
+
+-> Selecione o Default project : 4 - Infra\4.1 - Data\CitelProject.Infra.Data 
+
+-> e digite o comando:
 
 `Update-Database`
 
